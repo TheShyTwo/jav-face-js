@@ -7,9 +7,28 @@
     <link href="
     https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.css" 
     rel="stylesheet">
+    <style type="text/css">
+        #container {
+            width: 100%;
+            position: relative;
+        }
+
+        #container img {
+            width: 100%;
+            height: auto;
+        }
+
+        #container canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
 </head>
 <body>
     <h2>Face Api</h2>
+    <input type="file" id="file-input">
+    <div id="container"></div>
 </body>
 <script 
     src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js" 
@@ -20,5 +39,5 @@
 <script 
 src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js">
 </script>
-
+<script src="script.js"></script>
 </html>
